@@ -1,0 +1,147 @@
+
+38067@DESKTOP-ANJK625 MINGW64 ~
+$ pwd
+/c/Users/38067
+
+38067@DESKTOP-ANJK625 MINGW64 ~
+$ mkdir work
+
+38067@DESKTOP-ANJK625 MINGW64 ~
+$ cd work
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ mkdir work1 work2 work3
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ cd work1
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ touch q.txt w.txt e.txt r.json t.json
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ mkdir work4 work5 work6
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ ls
+e.txt  q.txt  r.json  t.json  w.txt  work4/  work5/  work6/
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ vim e.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ cd ..
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ pwd
+/c/Users/38067/work
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ cd work1
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ mv e.txt ../e.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ pwd
+/c/Users/38067/work/work1
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ mv w.txt ../w.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ pwd
+/c/Users/38067/work/work1
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ ls
+q.txt  r.json  t.json  work4/  work5/  work6/
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ cp q.txt ../newq.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ cp r.json ../newr.json
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ ls
+q.txt  r.json  t.json  work4/  work5/  work6/
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work/work1
+$ cd ..
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ cd work
+bash: cd: work: No such file or directory
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ ls
+e.txt  newq.txt  newr.json  w.txt  work1/  work2/  work3/
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ pwd
+/c/Users/38067/work
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ find -name 'e'
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ ls
+e.txt  newq.txt  newr.json  w.txt  work1/  work2/  work3/
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ grep 'hello' e.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ grep 'hello' w.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ pwd
+/c/Users/38067/work
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ grep -i 'hello' e.txt
+Hello
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ vim w.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ head w.txt
+Тестировщику приходится постоянно работать с логами. Каждый найденный баг обычно нужно описать как функционально: что не работает, что при этом делали, что показал UI. Так и подтвердить документально: timestamp + логи клиента/сервера/партнёрского бэкенда.
+
+Даже если в каком-то конкретном случае логи не нужны, разработчики скорее всего их попросят - просто по привычке.
+
+Для того, чтобы найти логи, нужно уметь перемащаться между директориям и смотреть из содержимое.
+
+
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ head -3 w.txt
+Тестировщику приходится постоянно работать с логами. Каждый найденный баг обычно нужно описать как функционально: что не работает, что при этом делали, что показал UI. Так и подтвердить документально: timestamp + логи клиента/сервера/партнёрского бэкенда.
+
+Даже если в каком-то конкретном случае логи не нужны, разработчики скорее всего их попросят - просто по привычке.
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ tail -2 w.txt
+
+
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ tail -4 w.txt
+
+Для того, чтобы найти логи, нужно уметь перемащаться между директориям и смотреть из содержимое.
+
+
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ vim newq.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ less newq.txt
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$ date
+Thu Jul  1 18:45:49     2021
+
+38067@DESKTOP-ANJK625 MINGW64 ~/work
+$
